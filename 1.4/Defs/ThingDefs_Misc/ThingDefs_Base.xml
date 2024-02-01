@@ -31,4 +31,13 @@
 
 	</ThingDef>
 
+	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Name="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef" Abstract="True">
+		<label>laser shot</label>
+		<description>A focused laser beam.</description>
+		<textures>
+			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
+		</textures>
+		<seam>0</seam>
+	</ThingDef>
+
 </Defs>

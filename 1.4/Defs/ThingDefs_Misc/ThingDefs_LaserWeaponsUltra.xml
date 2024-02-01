@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- ===================================================== -->
-    <!-- ====================== Weapons  ===================== -->
-    <!-- ===================================================== -->
+	<!-- ===================================================== -->
+	<!-- ====================== Weapons  ===================== -->
+	<!-- ===================================================== -->
 
-    <!-- ====================== Laser Assault Rifle  ===================== -->
+	<!-- ====================== Laser Assault Rifle  ===================== -->
 	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
 		<defName>AmP_AdvArm_Gun_LaserAssRifle</defName>
-		
+
 		<label>military laser assault rifle</label>
-		<description>An advanced laser assault rifle.</description>
+		<description>An advanced military laser assault rifle.</description>
 
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssRifle</texPath>
@@ -20,7 +20,7 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
-			<WorkToMake>65000</WorkToMake>
+			<WorkToMake>64000</WorkToMake>
 			<Mass>3.4</Mass>
 			<AccuracyTouch>0.72</AccuracyTouch>
 			<AccuracyShort>0.84</AccuracyShort>
@@ -44,7 +44,7 @@
 				<range>31.9</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>AmP_AdvArm_Shot_LasGunStandard</soundCast>
+				<soundCast>AmP_AdvArm_Shot_LasRifleStandard</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>
@@ -75,12 +75,12 @@
 
 	</ThingDef>
 
-    <!-- ====================== Laser Assault Rifle with UGL  ===================== -->
+	<!-- ====================== Laser Assault Rifle with UGL  ===================== -->
 	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
 		<defName>AmP_AdvArm_Gun_LaserAssRifleUGL</defName>
 
 		<label>military laser assault rifle (pulse launcher)</label>
-		<description>An advanced laser assault rifle with underbarrel pulse launcher.</description>
+		<description>An advanced military laser assault rifle with underbarrel pulse launcher.</description>
 
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssRifleUGL</texPath>
@@ -91,7 +91,7 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
-			<WorkToMake>68500</WorkToMake>
+			<WorkToMake>66500</WorkToMake>
 			<Mass>3.7</Mass>
 		</statBases>
 
@@ -104,15 +104,15 @@
 
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-                
+
 				<label>standard</label>
 
-                <accuracyTouch>0.72</accuracyTouch>
-                <accuracyShort>0.84</accuracyShort>
-                <accuracyMedium>0.86</accuracyMedium>
-                <accuracyLong>0.72</accuracyLong>
+				<accuracyTouch>0.72</accuracyTouch>
+				<accuracyShort>0.84</accuracyShort>
+				<accuracyMedium>0.86</accuracyMedium>
+				<accuracyLong>0.72</accuracyLong>
 
-                <defaultCooldownTime>0.9</defaultCooldownTime>
+				<defaultCooldownTime>0.9</defaultCooldownTime>
 
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AmP_AdvArm_Bullet_LaserStandard</defaultProjectile>
@@ -124,7 +124,7 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 
-				<soundCast>AmP_AdvArm_Shot_LasGunStandard</soundCast>
+				<soundCast>AmP_AdvArm_Shot_LasRifleStandard</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 
@@ -133,23 +133,23 @@
 				</targetParams>
 			</li>
 
-            
+
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AmP_AdvArm_Projectile_PulseCharge</defaultProjectile>
 
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-			  	<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 
 				<accuracyTouch>0.68</accuracyTouch>
-                <accuracyShort>0.63</accuracyShort>
-                <accuracyMedium>0.54</accuracyMedium>
-                <accuracyLong>0.43</accuracyLong>
+				<accuracyShort>0.63</accuracyShort>
+				<accuracyMedium>0.54</accuracyMedium>
+				<accuracyLong>0.43</accuracyLong>
 
-                <defaultCooldownTime>1.05</defaultCooldownTime>
+				<defaultCooldownTime>1.05</defaultCooldownTime>
 
-				<warmupTime>1.25</warmupTime>	
+				<warmupTime>1.25</warmupTime>
 
 				<minRange>3.9</minRange>
 				<range>22.9</range>
@@ -223,13 +223,13 @@
 
 	</ThingDef>
 
-	
-    <!-- ====================== Laser Assault Carbine  ===================== -->
+
+	<!-- ====================== Laser Assault Carbine  ===================== -->
 	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
 		<defName>AmP_AdvArm_Gun_LaserAssCarbine</defName>
 
 		<label>military laser assault carbine</label>
-		<description>An advanced laser assault carbine.</description>
+		<description>An advanced military laser assault carbine.</description>
 
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssCarbine</texPath>
@@ -239,7 +239,7 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
-			<WorkToMake>62000</WorkToMake>
+			<WorkToMake>61000</WorkToMake>
 			<Mass>2.7</Mass>
 			<AccuracyTouch>0.77</AccuracyTouch>
 			<AccuracyShort>0.82</AccuracyShort>
@@ -255,7 +255,7 @@
 
 		<weaponClasses>
 			<li>RangedLight</li>
-			<li>ShortShots</li>
+			<!--<li>ShortShots</li>-->
 		</weaponClasses>
 
 		<verbs>
@@ -267,7 +267,7 @@
 				<range>26.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>AmP_AdvArm_Shot_LasGunLight</soundCast>
+				<soundCast>AmP_AdvArm_Shot_LasRifleLight</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>
@@ -298,13 +298,13 @@
 
 	</ThingDef>
 
-	
-    <!-- ====================== Laser Assault Rifle  ===================== -->
+
+	<!-- ====================== Laser Marksman Rifle  ===================== -->
 	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
 		<defName>AmP_AdvArm_Gun_LaserMarksmanRifle</defName>
 
 		<label>military laser marksman rifle</label>
-		<description>An advanced laser marksman rifle.</description>
+		<description>An advanced military laser marksman rifle.</description>
 
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserMarksmanRifle</texPath>
@@ -315,7 +315,7 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
-			<WorkToMake>70000</WorkToMake>
+			<WorkToMake>66000</WorkToMake>
 			<Mass>3.8</Mass>
 			<AccuracyTouch>0.7</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
@@ -343,7 +343,162 @@
 				<range>41.9</range>
 				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
-				<soundCast>AmP_AdvArm_Shot_LasGunPrecise</soundCast>
+				<soundCast>AmP_AdvArm_Shot_LasRiflePrecise</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+
+	</ThingDef>
+
+	<!-- ====================== Laser Pistol  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserPistol</defName>
+		<label>military laser pistol</label>
+		<description>An advanced military laser pistol.</description>
+		
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>1.4</Mass>
+
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserPistol</defaultProjectile>
+				<warmupTime>0.45</warmupTime>
+
+				<range>25.9</range>
+
+				<burstShotCount>1</burstShotCount>
+
+				<soundCast>AmP_AdvArm_Shot_LasPistol</soundCast>
+
+				<soundCastTail>GunTail_Medium</soundCastTail>
+
+				<muzzleFlashScale>14</muzzleFlashScale>
+
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- ====================== Laser LSW  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserLSW</defName>
+
+		<label>military laser LSW</label>
+		<description>An advanced military laser light support weapon.</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserLSW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>65500</WorkToMake>
+			<Mass>3.9</Mass>
+			<AccuracyTouch>0.64</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.76</AccuracyMedium>
+			<AccuracyLong>0.73</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Plasteel>65</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+
+		<!-- Technically not so heavy, but its purpose is the same as vanilla LMG (which is considered heavy too)-->
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserLSW</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>34.9</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>7</burstShotCount>
+				<soundCast>AmP_AdvArm_Shot_LasLSW</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>

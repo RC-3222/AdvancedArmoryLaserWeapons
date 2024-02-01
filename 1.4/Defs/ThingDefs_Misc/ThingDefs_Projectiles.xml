@@ -6,14 +6,8 @@
     <!-- ========================================================= -->
 
     <!-- ====================== Lasers  ===================== -->
-	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserStandard</defName>
-		<label>standard laser shot</label>
-		<description>A focused laser beam.</description>
-		<textures>
-			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
-		</textures>
-		<seam>0</seam>
 		<causefireChance>0.08</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -22,15 +16,20 @@
 			<stoppingPower>1.5</stoppingPower>
 		</projectile>
 	</ThingDef>
+
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AmP_AdvArm_Bullet_LaserLSW</defName>
+		<causefireChance>0.08</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.57</armorPenetrationBase>
+			<stoppingPower>1.48</stoppingPower>
+		</projectile>
+	</ThingDef>
     
-	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserLight</defName>
-		<label>light laser shot</label>
-		<description>A focused, thinner laser beam.</description>
-		<textures>
-			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
-		</textures>
-		<seam>0</seam>
 		<beamWidth>0.95</beamWidth>
 		<causefireChance>0.06</causefireChance>
 		<projectile>
@@ -41,14 +40,8 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserPrecise</defName>
-		<label>precise laser shot</label>
-		<description>A focused, long range laser beam.</description>
-		<textures>
-			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
-		</textures>
-		<seam>0</seam>
 		<beamWidth>1.05</beamWidth>
 		<causefireChance>0.12</causefireChance>
 		<projectile>
@@ -58,11 +51,24 @@
 			<stoppingPower>2.0</stoppingPower>
 		</projectile>
 	</ThingDef>
+
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AmP_AdvArm_Bullet_LaserPistol</defName>
+		<beamWidth>0.97</beamWidth>
+		<causefireChance>0.07</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<stoppingPower>1.4</stoppingPower>
+		</projectile>
+	</ThingDef>
     
     <!-- ====================== Other  ===================== -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>AmP_AdvArm_Projectile_PulseCharge</defName>
 		<label>pulse charge</label>
+		<description>A projectile of concentrated pulse energy.</description>
 		<thingClass>Projectile_Explosive</thingClass>
 		<category>Projectile</category>
 		<graphicData>

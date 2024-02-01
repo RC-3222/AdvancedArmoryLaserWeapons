@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <SoundDef>
-        <defName>AmP_AdvArm_Shot_LasGunStandard</defName>  
+        <defName>AmP_AdvArm_Shot_LasRifleStandard</defName>  
         <context>MapOnly</context>
         <eventNames />  
         <maxSimultaneous>1</maxSimultaneous>  
@@ -9,7 +9,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Clip">
-                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+                <clipPath>Things/AmP_AdvArm_Shot_LasRifle</clipPath>
               </li>
             </grains>      
             <volumeRange>
@@ -22,7 +22,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>AmP_AdvArm_Shot_LasGunLight</defName>  
+        <defName>AmP_AdvArm_Shot_LasRifleLight</defName>  
         <context>MapOnly</context>
         <eventNames />  
         <maxSimultaneous>1</maxSimultaneous>  
@@ -30,7 +30,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Clip">
-                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+                <clipPath>Things/AmP_AdvArm_Shot_LasRifle</clipPath>
               </li>
             </grains>      
             <volumeRange>
@@ -47,7 +47,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>AmP_AdvArm_Shot_LasGunPrecise</defName>  
+        <defName>AmP_AdvArm_Shot_LasRiflePrecise</defName>  
         <context>MapOnly</context>
         <eventNames />  
         <maxSimultaneous>1</maxSimultaneous>  
@@ -55,7 +55,7 @@
           <li>
             <grains>
               <li Class="AudioGrain_Clip">
-                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+                <clipPath>Things/AmP_AdvArm_Shot_LasRifle</clipPath>
               </li>
             </grains>      
             <volumeRange>
@@ -70,4 +70,51 @@
           </li>
         </subSounds>
     </SoundDef>
+    
+    <SoundDef>
+      <defName>AmP_AdvArm_Shot_LasPistol</defName>  
+      <context>MapOnly</context>
+      <eventNames />  
+      <maxSimultaneous>1</maxSimultaneous>  
+      <subSounds>
+        <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>Things/AmP_AdvArm_Shot_LasPistol</clipPath>
+            </li>
+          </grains>      
+          <volumeRange>
+            <min>46</min>        
+            <max>46</max>
+          </volumeRange>      
+          <sustainLoop>False</sustainLoop>    
+        </li>
+      </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>AmP_AdvArm_Shot_LasLSW</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/AmP_AdvArm_Shot_LasRifle</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>47</min>        
+          <max>47</max>
+        </volumeRange> 
+        <pitchRange>
+          <min>0.941765</min>        
+          <max>0.974525</max>
+        </pitchRange>          
+        <sustainLoop>False</sustainLoop>    
+      </li>
+    </subSounds>
+</SoundDef>
 </Defs>
