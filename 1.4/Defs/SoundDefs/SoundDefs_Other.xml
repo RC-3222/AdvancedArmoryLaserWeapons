@@ -13,8 +13,8 @@
               </li>
             </grains>      
             <volumeRange>
-              <min>40</min>        
-              <max>40</max>
+              <min>100</min>        
+              <max>100</max>
             </volumeRange>      
             <sustainLoop>False</sustainLoop>      
           </li>

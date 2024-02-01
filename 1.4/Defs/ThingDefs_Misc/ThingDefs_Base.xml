@@ -20,7 +20,7 @@
 		</thingSetMakerTags>
 
 		<recipeMaker>
-			<researchPrerequisite>AmP_AdvArm_LaserWeaponry</researchPrerequisite>
+			<researchPrerequisite>AmP_AdvArm_LaserWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
