@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>AmP_AdvArm_LaserWeapons</defName>
+		<label>military laser weapons</label>
+		<description>Allows to create various laser weapons.</description>
+		<baseCost>5200</baseCost>
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>VWE_LaserWeapons</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>AmP_ResearchTab</tab>
+	</ResearchProjectDef>
+</Defs>

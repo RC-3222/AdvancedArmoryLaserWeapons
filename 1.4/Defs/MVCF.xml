@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <MVCF.ModDef>
+        <defName>AmP_AdvArm_LaserWeapons</defName>
+        <label>Advanced Armory Laser Weapons</label>
+        <description>Military laser weapons.</description>
+        <ActivateFeatures>
+            <li>ExtraEquipmentVerbs</li>
+            <li>VerbComps</li>
+            <li>IntegratedToggle</li>
+        </ActivateFeatures>
+    </MVCF.ModDef>
+
+</Defs>

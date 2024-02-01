@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!-- ========================================================= -->
+    <!-- ====================== Projectiles  ===================== -->
+    <!-- ========================================================= -->
+
+    <!-- ====================== Lasers  ===================== -->
+	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AmP_AdvArm_Bullet_LaserStandard</defName>
+		<label>standard laser shot</label>
+		<description>A focused laser beam.</description>
+		<textures>
+			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
+		</textures>
+		<seam>0</seam>
+		<causefireChance>0.08</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.60</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+    
+	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AmP_AdvArm_Bullet_LaserLight</defName>
+		<label>light laser shot</label>
+		<description>A focused, thinner laser beam.</description>
+		<textures>
+			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
+		</textures>
+		<seam>0</seam>
+		<beamWidth>0.95</beamWidth>
+		<causefireChance>0.06</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.46</armorPenetrationBase>
+			<stoppingPower>1.35</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+		<defName>AmP_AdvArm_Bullet_LaserPrecise</defName>
+		<label>precise laser shot</label>
+		<description>A focused, long range laser beam.</description>
+		<textures>
+			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
+		</textures>
+		<seam>0</seam>
+		<beamWidth>1.05</beamWidth>
+		<causefireChance>0.12</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.88</armorPenetrationBase>
+			<stoppingPower>2.0</stoppingPower>
+		</projectile>
+	</ThingDef>
+    
+    <!-- ====================== Other  ===================== -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>AmP_AdvArm_Projectile_PulseCharge</defName>
+		<label>pulse charge</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<category>Projectile</category>
+		<graphicData>
+			<texPath>Things/Projectile/AmP_AdvArm_Projectile_PulseCharge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>AmP_AdvArm_PulseShock</damageDef>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>48</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

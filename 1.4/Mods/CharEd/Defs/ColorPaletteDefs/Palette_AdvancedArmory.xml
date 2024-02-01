@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <CharacterEditor.ColorPaletteDef>
+        <defName>AmP_AdvArm_Palette_LaserWeapons</defName>
+        <label>Advanced Armory - Laser</label>
+        <colors>
+            <li>AmP_AdvArm_Color_LaserMilitaryGreen</li>
+            <li>AmP_AdvArm_Color_LaserMilitaryGrey</li>
+        </colors>
+    </CharacterEditor.ColorPaletteDef>
+
+</Defs>

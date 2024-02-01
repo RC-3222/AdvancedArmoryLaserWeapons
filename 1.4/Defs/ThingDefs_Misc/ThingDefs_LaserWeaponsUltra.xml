@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- ===================================================== -->
+    <!-- ====================== Weapons  ===================== -->
+    <!-- ===================================================== -->
+
+    <!-- ====================== Laser Assault Rifle  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserAssRifle</defName>
+		
+		<label>military laser assault rifle</label>
+		<description>An advanced laser assault rifle.</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>3.4</Mass>
+			<AccuracyTouch>0.72</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.72</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Plasteel>55</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserStandard</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>31.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>AmP_AdvArm_Shot_LasGunStandard</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+
+	</ThingDef>
+
+    <!-- ====================== Laser Assault Rifle with UGL  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserAssRifleUGL</defName>
+
+		<label>military laser assault rifle (pulse launcher)</label>
+		<description>An advanced laser assault rifle with underbarrel pulse launcher.</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssRifleUGL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>68500</WorkToMake>
+			<Mass>3.7</Mass>
+		</statBases>
+
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+
+		<verbs>
+
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+                
+				<label>standard</label>
+
+                <accuracyTouch>0.72</accuracyTouch>
+                <accuracyShort>0.84</accuracyShort>
+                <accuracyMedium>0.86</accuracyMedium>
+                <accuracyLong>0.72</accuracyLong>
+
+                <defaultCooldownTime>0.9</defaultCooldownTime>
+
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserStandard</defaultProjectile>
+
+				<warmupTime>1.2</warmupTime>
+
+				<range>31.9</range>
+
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+
+				<soundCast>AmP_AdvArm_Shot_LasGunStandard</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+
+            
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Projectile_PulseCharge</defaultProjectile>
+
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			  	<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+
+				<accuracyTouch>0.68</accuracyTouch>
+                <accuracyShort>0.63</accuracyShort>
+                <accuracyMedium>0.54</accuracyMedium>
+                <accuracyLong>0.43</accuracyLong>
+
+                <defaultCooldownTime>1.05</defaultCooldownTime>
+
+				<warmupTime>1.25</warmupTime>	
+
+				<minRange>3.9</minRange>
+				<range>22.9</range>
+
+				<forcedMissRadius>0.9</forcedMissRadius>
+
+				<burstShotCount>1</burstShotCount>
+
+				<soundCast>AmP_AdvArm_Shot_PulseCharge</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+
+				<muzzleFlashScale>12</muzzleFlashScale>
+
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+
+				<commandIcon>UI/Gizmos/AmP_AdvArm_Gizmo_PulseCharge</commandIcon>
+				<label>pulse charge</label>
+			</li>
+
+		</verbs>
+
+		<comps>
+
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>pulse charge</label>
+
+						<canBeToggled>true</canBeToggled>
+
+						<description>Powerful pulse charge shot. Has a 3 hour cooldown.</description>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>120</cooldownTime>
+							</li>
+						</comps>
+					</li>
+					<li>
+						<label>standard</label>
+						<canBeToggled>false</canBeToggled>
+						<description>Standard laser rifle shot.</description>
+					</li>
+				</verbProps>
+			</li>
+
+		</comps>
+
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+
+	</ThingDef>
+
+	
+    <!-- ====================== Laser Assault Carbine  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserAssCarbine</defName>
+
+		<label>military laser assault carbine</label>
+		<description>An advanced laser assault carbine.</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserAssCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>62000</WorkToMake>
+			<Mass>2.7</Mass>
+			<AccuracyTouch>0.77</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.68</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Plasteel>45</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserLight</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>26.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>AmP_AdvArm_Shot_LasGunLight</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+
+	</ThingDef>
+
+	
+    <!-- ====================== Laser Assault Rifle  ===================== -->
+	<ThingDef ParentName="AmP_AdvArm_BaseLaserGun">
+		<defName>AmP_AdvArm_Gun_LaserMarksmanRifle</defName>
+
+		<label>military laser marksman rifle</label>
+		<description>An advanced laser marksman rifle.</description>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AmP_AdvArm_LaserMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+
+		<statBases>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AmP_AdvArm_Bullet_LaserPrecise</defaultProjectile>
+				<warmupTime>1.7</warmupTime>
+				<range>41.9</range>
+				<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>AmP_AdvArm_Shot_LasGunPrecise</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+
+	</ThingDef>
+</Defs>

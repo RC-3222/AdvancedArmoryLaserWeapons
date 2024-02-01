@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <ColorDef>
+        <defName>AmP_AdvArm_Color_LaserMilitaryGreen</defName>
+        <label>military green</label>
+        <color>(79,85,79)</color>
+        <displayOrder>1304</displayOrder>
+    </ColorDef>
+
+    <ColorDef>
+        <defName>AmP_AdvArm_Color_LaserMilitaryGrey</defName>
+        <label>military grey</label>
+        <color>(107,105,107)</color>
+        <displayOrder>1305</displayOrder>
+    </ColorDef>
+    
+</Defs>

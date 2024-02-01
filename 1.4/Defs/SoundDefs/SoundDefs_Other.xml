@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>AmP_AdvArm_Shot_PulseCharge</defName>  
+        <context>MapOnly</context>
+        <eventNames />  
+        <maxSimultaneous>1</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Things/AmP_AdvArm_Shot_PulseCharge</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>
+              <min>40</min>        
+              <max>40</max>
+            </volumeRange>      
+            <sustainLoop>False</sustainLoop>      
+          </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

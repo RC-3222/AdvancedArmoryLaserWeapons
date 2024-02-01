@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ====================== Base ====================== -->
+	<ThingDef Name="AmP_AdvArm_BaseLaserGun" Abstract="True" ParentName="BaseHumanMakeableGun">
+		<techLevel>Ultra</techLevel>
+
+		<tradeTags>
+			<li>SpacerGun</li>
+		</tradeTags>
+
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>LaserGun</li>
+		</weaponTags>
+
+		<thingSetMakerTags Inherit="False">
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+
+		<recipeMaker>
+			<researchPrerequisite>AmP_AdvArm_LaserWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+
+	</ThingDef>
+
+</Defs>

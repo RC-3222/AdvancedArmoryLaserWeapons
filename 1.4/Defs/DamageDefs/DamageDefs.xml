@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<DamageDef ParentName="Bomb">
+
+		<defName>AmP_AdvArm_PulseShock</defName>
+		<label>pulse shock</label>
+		<deathMessage>{0} has been shocked to death.</deathMessage>
+
+		<harmsHealth>true</harmsHealth>
+
+		<impactSoundType>Electric</impactSoundType>
+		<defaultDamage>55</defaultDamage>
+
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(0.8, 0.81, 0.83)</explosionColorCenter>
+		<explosionColorEdge>(0.8, 0.81, 0.83, 0.8)</explosionColorEdge>
+		<explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
+
+		<defaultStoppingPower>0.65</defaultStoppingPower>
+		<defaultArmorPenetration>0.25</defaultArmorPenetration>
+
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+
+	</DamageDef>
+
+</Defs>

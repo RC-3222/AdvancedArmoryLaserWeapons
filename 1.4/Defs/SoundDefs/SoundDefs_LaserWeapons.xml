@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>AmP_AdvArm_Shot_LasGunStandard</defName>  
+        <context>MapOnly</context>
+        <eventNames />  
+        <maxSimultaneous>1</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>
+              <min>47</min>        
+              <max>47</max>
+            </volumeRange>      
+            <sustainLoop>False</sustainLoop>    
+          </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AmP_AdvArm_Shot_LasGunLight</defName>  
+        <context>MapOnly</context>
+        <eventNames />  
+        <maxSimultaneous>1</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>
+              <min>47</min>        
+              <max>47</max>
+            </volumeRange> 
+            <pitchRange>
+              <min>1.061765</min>        
+              <max>1.094525</max>
+            </pitchRange>          
+            <sustainLoop>False</sustainLoop>    
+          </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>AmP_AdvArm_Shot_LasGunPrecise</defName>  
+        <context>MapOnly</context>
+        <eventNames />  
+        <maxSimultaneous>1</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Things/AmP_AdvArm_Shot_LasGun</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>
+              <min>48</min>        
+              <max>48</max>
+            </volumeRange> 
+            <pitchRange>
+              <min>0.891765</min>        
+              <max>0.924525</max>
+            </pitchRange>          
+            <sustainLoop>False</sustainLoop>    
+          </li>
+        </subSounds>
+    </SoundDef>
+</Defs>
