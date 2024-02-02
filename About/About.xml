@@ -25,6 +25,11 @@
 			<displayName>Vanilla Weapons Expanded - Laser</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1989352844</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>AmP.ModFramework</packageId>
+			<displayName>AmP Mod Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=somerandomid</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>

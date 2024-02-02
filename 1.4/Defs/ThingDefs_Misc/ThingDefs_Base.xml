@@ -2,6 +2,7 @@
 <Defs>
 
 	<!-- ====================== Base ====================== -->
+	<!-- ====================== Weapons ====================== -->
 	<ThingDef Name="AmP_AdvArm_BaseLaserGun" Abstract="True" ParentName="BaseHumanMakeableGun">
 		<techLevel>Ultra</techLevel>
 
@@ -10,6 +11,7 @@
 		</tradeTags>
 
 		<weaponTags>
+			<li>AmP_AdvArm_LaserGun</li>
 			<li>SpacerGun</li>
 			<li>LaserGun</li>
 		</weaponTags>
@@ -31,13 +33,52 @@
 
 	</ThingDef>
 
-	<ThingDef ParentName="VWEL_Bullet_LaserGeneric" Name="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef" Abstract="True">
+
+	<!-- ====================== Projectiles ====================== -->
+
+	<!-- ========== Setup ========== -->
+
+	<ThingDef>
+		<defName>AmP_AdvArm_BeamGraphic</defName>
+		<thingClass>AmPModFramework.Projectiles.Laser.BeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>laser beam</label>
+
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="AmP_AdvArm_Bullet_LaserBaseSetup" ParentName="BaseBullet">
+		<thingClass>AmPModFramework.Projectiles.Laser.Beam</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<beamGraphic>AmP_AdvArm_BeamGraphic</beamGraphic>
+
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<speed>10000</speed>
+		</projectile>
+
+		<seam>0</seam>
+	</ThingDef>
+
+	<!-- =========================== -->
+
+	<ThingDef ParentName="AmP_AdvArm_Bullet_LaserBaseSetup" Name="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef" Abstract="True">
 		<label>laser shot</label>
 		<description>A focused laser beam.</description>
-		<textures>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<!--<drawSize>1.5</drawSize>-->
+		</graphicData>
+		<!--<textures>
 			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
-		</textures>
-		<seam>0</seam>
+		</textures>-->
+		<!-- <seam>0</seam> -->
 	</ThingDef>
 
 </Defs>

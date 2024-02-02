@@ -6,61 +6,66 @@
     <!-- ========================================================= -->
 
     <!-- ====================== Lasers  ===================== -->
-	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserStandard</defName>
-		<causefireChance>0.08</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>13</damageAmountBase>
 			<armorPenetrationBase>0.60</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
+			<bulletChanceToStartFire>0.08</bulletChanceToStartFire>
+			<bulletFireSizeRange>0.1~0.12</bulletFireSizeRange>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserLSW</defName>
-		<causefireChance>0.08</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>13</damageAmountBase>
 			<armorPenetrationBase>0.57</armorPenetrationBase>
 			<stoppingPower>1.48</stoppingPower>
+			<bulletChanceToStartFire>0.08</bulletChanceToStartFire>
+			<bulletFireSizeRange>0.1~0.12</bulletFireSizeRange>
 		</projectile>
 	</ThingDef>
     
-	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserLight</defName>
 		<beamWidth>0.95</beamWidth>
-		<causefireChance>0.06</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<armorPenetrationBase>0.46</armorPenetrationBase>
 			<stoppingPower>1.35</stoppingPower>
+			<bulletChanceToStartFire>0.06</bulletChanceToStartFire>
+			<bulletFireSizeRange>0.1~0.12</bulletFireSizeRange>
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserPrecise</defName>
 		<beamWidth>1.05</beamWidth>
-		<causefireChance>0.12</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.88</armorPenetrationBase>
 			<stoppingPower>2.0</stoppingPower>
+			<bulletChanceToStartFire>0.11</bulletChanceToStartFire>
+			<bulletFireSizeRange>0.11~0.13</bulletFireSizeRange>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+	<ThingDef ParentName="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef">
 		<defName>AmP_AdvArm_Bullet_LaserPistol</defName>
 		<beamWidth>0.97</beamWidth>
-		<causefireChance>0.07</causefireChance>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>13</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<stoppingPower>1.4</stoppingPower>
+			<bulletChanceToStartFire>0.07</bulletChanceToStartFire>
+			<bulletFireSizeRange>0.1~0.12</bulletFireSizeRange>
 		</projectile>
 	</ThingDef>
     
