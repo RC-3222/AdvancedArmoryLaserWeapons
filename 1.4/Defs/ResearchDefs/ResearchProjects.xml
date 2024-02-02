@@ -11,7 +11,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<prerequisites>
-			<li>VWE_LaserWeapons</li>
+			<li>ChargedShot</li>
 		</prerequisites>
 		<researchViewX>7</researchViewX>
 		<researchViewY>0</researchViewY>

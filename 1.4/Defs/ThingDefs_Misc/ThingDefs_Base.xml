@@ -40,45 +40,67 @@
 
 	<ThingDef>
 		<defName>AmP_AdvArm_BeamGraphic</defName>
-		<thingClass>AmPModFramework.Projectiles.Laser.BeamGraphic</thingClass>
-		<drawOffscreen>true</drawOffscreen>
 		<label>laser beam</label>
+		<thingClass>AthenaFramework.Beam</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- A bit longer to account for invisible base projectile -->
+			<drawSize>(1, 1.05)</drawSize>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
 
 		<category>Projectile</category>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<useHitPoints>False</useHitPoints>
-		<neverMultiSelect>True</neverMultiSelect>
-	</ThingDef>
+		<useHitPoints>false</useHitPoints>
+		<selectable>false</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<drawerType>RealtimeOnly</drawerType>
 
-	<ThingDef Abstract="True" Name="AmP_AdvArm_Bullet_LaserBaseSetup" ParentName="BaseBullet">
-		<thingClass>AmPModFramework.Projectiles.Laser.Beam</thingClass>
-		<drawOffscreen>true</drawOffscreen>
-		<beamGraphic>AmP_AdvArm_BeamGraphic</beamGraphic>
-
-		<projectile>
-			<damageDef>Bomb</damageDef>
-			<speed>10000</speed>
-		</projectile>
-
-		<seam>0</seam>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamExtension">
+				<maxRange>150.9</maxRange>
+				<textureFrameAmount>1</textureFrameAmount>
+				<sizeTextureAmount>1</sizeTextureAmount>
+				<!--<beamDuration>5</beamDuration>-->
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="AthenaFramework.CompProperties_BeamFadeout">
+				<fadeoutTicks>10</fadeoutTicks>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- =========================== -->
 
-	<ThingDef ParentName="AmP_AdvArm_Bullet_LaserBaseSetup" Name="AmP_AdvArm_Bullet_MilitaryLaserBase" Class="AmPModFramework.Projectiles.Laser.BeamDef" Abstract="True">
+	<ThingDef ParentName="BaseBullet" Name="AmP_AdvArm_Bullet_MilitaryLaserBase" Abstract="True">
 		<label>laser shot</label>
 		<description>A focused laser beam.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
+			<!-- This graphic doesn't really matter here as the visuals are handled by the corresponding BeamGraphic -->
 			<texPath>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</texPath>
-			<shaderType>TransparentPostLight</shaderType>
-			<!--<drawSize>1.5</drawSize>-->
+
+			<!-- To hide the projectile completely -->
+			<drawSize>0</drawSize>
+			<color>(0,0,0,0)</color>
 		</graphicData>
-		<!--<textures>
-			<li>Things/Projectile/AmP_AdvArm_Projectile_LaserRed</li>
-		</textures>-->
-		<!-- <seam>0</seam> -->
+		<comps>
+			<li Class="AthenaFramework.CompProperties_ProjectileTrail">
+				<beamDef>AmP_AdvArm_BeamGraphic</beamDef>
+			</li>
+			
+			<li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+				<effecter>AmP_AdvArm_Effecter_LaserImpact</effecter>
+			</li>
+		</comps>
+		
+		<projectile>
+			<speed>220</speed>
+		</projectile>
 	</ThingDef>
 
 </Defs>
