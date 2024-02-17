@@ -93,7 +93,7 @@
 				<beamDef>AmP_AdvArm_BeamGraphic</beamDef>
 			</li>
 			
-			<li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+			<li Class="AmPModFrameworkAthena.Comps.ProjectileComps.CompProperties_ImpactEffectExtended">
 				<effecter>AmP_AdvArm_Effecter_LaserImpact</effecter>
 			</li>
 		</comps>
