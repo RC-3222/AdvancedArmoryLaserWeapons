@@ -2,7 +2,7 @@
 <loadFolders>
     <v1.4>
         <li>/</li>
-        <li>1.4/</li>
-		<li IfModActive="void.charactereditor.alt">1.4/Mods/CharEd</li>
+        <li>1.5/</li>
+		<li IfModActive="void.charactereditor.alt">1.5/Mods/CharEd</li>
     </v1.4>
 </loadFolders>
