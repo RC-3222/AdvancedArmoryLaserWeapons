@@ -27,9 +27,9 @@
 			<downloadUrl>https://github.com/SmArtKar/AthenaFramework</downloadUrl>
 		</li>
 		<li>
-			<packageId>AmP.ModFrameworkAthena</packageId>
-			<displayName>[AmP] AmP Mod Framework - Athena Extension</displayName>
-			<downloadUrl>https://github.com/RC-3222/AmPModFrameworkAthena</downloadUrl>
+			<packageId>AmP.ModFramework</packageId>
+			<displayName>[AmP] AmP Mod Framework</displayName>
+			<downloadUrl>https://github.com/RC-3222/AmPModFramework</downloadUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
@@ -39,7 +39,7 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>smartkar.athenaframework</li>
-		<li>AmP.ModFrameworkAthena</li>
+		<li>AmP.ModFramework</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
