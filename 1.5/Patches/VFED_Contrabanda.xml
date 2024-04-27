@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="AmPPatchOperationsExtended.Controls.PatchOperationFindMod">
+        <mods>
+            <li>OskarPotocki.VFE.Deserters</li>
+        </mods>
+        <usePackageId>true</usePackageId>
+        <match Class="PatchOperationSequence">
+                <operations>
+
+                    <li Class="PatchOperationAddModExtension">
+                        <xpath>Defs/ThingDef[defName="AmP_AdvArm_Gun_LaserPistol" or defName="AmP_AdvArm_Gun_LaserAssCarbine"]</xpath>
+                        <value>
+                            <li Class="VFED.ContrabandExtension">
+                                <category>VFED_Imperial</category>
+                                <intelCost>1</intelCost>
+                                <useCriticalIntel>true</useCriticalIntel>
+                            </li>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAddModExtension">
+                        <xpath>Defs/ThingDef[defName="AmP_AdvArm_Gun_LaserAssRifle"]</xpath>
+                        <value>
+                            <li Class="VFED.ContrabandExtension">
+                                <category>VFED_Imperial</category>
+                                <intelCost>2</intelCost>
+                                <useCriticalIntel>true</useCriticalIntel>
+                            </li>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAddModExtension">
+                        <xpath>Defs/ThingDef[defName="AmP_AdvArm_Gun_LaserLSW" or defName="AmP_AdvArm_Gun_LaserAssRifleUGL" or defName="AmP_AdvArm_Gun_LaserMarksmanRifle"]</xpath>
+                        <value>
+                            <li Class="VFED.ContrabandExtension">
+                                <category>VFED_Imperial</category>
+                                <intelCost>3</intelCost>
+                                <useCriticalIntel>true</useCriticalIntel>
+                            </li>
+                        </value>
+                    </li>
+                    
+            </operations>
+        </match>
+    </Operation>
+</Patch>

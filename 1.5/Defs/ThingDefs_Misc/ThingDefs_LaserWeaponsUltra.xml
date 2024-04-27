@@ -91,6 +91,13 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
+			<!--
+			<AccuracyTouch>0.72</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.72</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+			-->
 			<WorkToMake>66500</WorkToMake>
 			<Mass>3.7</Mass>
 		</statBases>
@@ -105,7 +112,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 
-				<label>standard</label>
+				<label>laser assault rifle</label>
 
 				<accuracyTouch>0.72</accuracyTouch>
 				<accuracyShort>0.84</accuracyShort>
@@ -192,7 +199,7 @@
 						</comps>
 					</li>
 					<li>
-						<label>standard</label>
+						<label>laser assault rifle</label>
 						<canBeToggled>false</canBeToggled>
 						<description>Standard laser rifle shot.</description>
 					</li>
@@ -453,7 +460,7 @@
 		</tools>
 		
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<usableWithShields>true</usableWithShields>
 			</li>
 		</modExtensions>
