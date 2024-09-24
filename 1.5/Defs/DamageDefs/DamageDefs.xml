@@ -10,9 +10,20 @@
 		<harmsHealth>true</harmsHealth>
 
 		<impactSoundType>Electric</impactSoundType>
+		<minDamageToFragment>18</minDamageToFragment>
 		<defaultDamage>55</defaultDamage>
 
 		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
 
 		<explosionCellFleck>BlastEMP</explosionCellFleck>
 		<explosionColorCenter>(0.8, 0.81, 0.83)</explosionColorCenter>
