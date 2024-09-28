@@ -91,13 +91,12 @@
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 
 		<statBases>
-			<!--
 			<AccuracyTouch>0.72</AccuracyTouch>
 			<AccuracyShort>0.84</AccuracyShort>
 			<AccuracyMedium>0.86</AccuracyMedium>
 			<AccuracyLong>0.72</AccuracyLong>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-			-->
+
 			<WorkToMake>66500</WorkToMake>
 			<Mass>3.7</Mass>
 		</statBases>
@@ -111,15 +110,6 @@
 
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-
-				<label>laser assault rifle</label>
-
-				<accuracyTouch>0.72</accuracyTouch>
-				<accuracyShort>0.84</accuracyShort>
-				<accuracyMedium>0.86</accuracyMedium>
-				<accuracyLong>0.72</accuracyLong>
-
-				<defaultCooldownTime>0.9</defaultCooldownTime>
 
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AmP_AdvArm_Bullet_LaserStandard</defaultProjectile>
@@ -140,72 +130,29 @@
 				</targetParams>
 			</li>
 
-
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>AmP_AdvArm_Projectile_PulseCharge</defaultProjectile>
-
-				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-
-				<accuracyTouch>0.68</accuracyTouch>
-				<accuracyShort>0.63</accuracyShort>
-				<accuracyMedium>0.54</accuracyMedium>
-				<accuracyLong>0.43</accuracyLong>
-
-				<defaultCooldownTime>1.05</defaultCooldownTime>
-
-				<warmupTime>1.25</warmupTime>
-
-				<minRange>3.9</minRange>
-				<range>22.9</range>
-
-				<forcedMissRadius>0.9</forcedMissRadius>
-
-				<burstShotCount>1</burstShotCount>
-
-				<soundCast>AmP_AdvArm_Shot_PulseCharge</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-
-				<muzzleFlashScale>12</muzzleFlashScale>
-
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-
-				<commandIcon>UI/Gizmos/AmP_AdvArm_Gizmo_PulseCharge</commandIcon>
-				<label>pulse charge</label>
-			</li>
-
 		</verbs>
 
-		<comps>
-
-			<li Class="MVCF.Comps.CompProperties_VerbProps">
-				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
-				<verbProps>
-					<li>
-						<label>pulse charge</label>
-
-						<canBeToggled>true</canBeToggled>
-
-						<description>Powerful pulse charge shot. Has a 3 hour cooldown.</description>
-						<comps>
-							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
-								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-								<cooldownTime>120</cooldownTime>
-							</li>
-						</comps>
-					</li>
-					<li>
-						<label>laser assault rifle</label>
-						<canBeToggled>false</canBeToggled>
-						<description>Standard laser rifle shot.</description>
-					</li>
-				</verbProps>
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>AmP_AdvArm_PulseCharge</abilityDef>
+				<maxCharges>5</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>pulse launcher charge</chargeNoun>
+				<ammoDef>Plasteel</ammoDef>
+				<ammoCountPerCharge>3</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
 			</li>
-
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Biocodable" />
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
 		</comps>
 
 		<tools>

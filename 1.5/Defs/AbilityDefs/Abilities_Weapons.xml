@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>AmP_AdvArm_PulseCharge</defName>
+        <label>pulse charge</label>
+        <description>Fire a powerful volatile sphere of pulse energy.</description>
+        <iconPath>UI/Gizmos/AmP_AdvArm_Gizmo_PulseCharge</iconPath>
+        <showOnCharacterCard>false</showOnCharacterCard>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+
+            <range>22.9</range>
+            <minRange>3.9</minRange>
+            <requireLineOfSight>true</requireLineOfSight>
+
+            <warmupTime>1.25</warmupTime>
+            <soundCast>AmP_AdvArm_Shot_PulseCharge</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityLaunchProjectile">
+                <projectileDef>AmP_AdvArm_Projectile_PulseCharge</projectileDef>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>
