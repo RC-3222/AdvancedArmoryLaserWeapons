@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
     <AbilityDef>
         <defName>AmP_AdvArm_PulseCharge</defName>
         <label>pulse charge</label>
@@ -8,22 +9,30 @@
         <showOnCharacterCard>false</showOnCharacterCard>
         <aiCanUse>true</aiCanUse>
         <verbProperties>
-            <verbClass>Verb_CastAbility</verbClass>
+            <verbClass>AmPModFramework.Verbs.Verb_CastAbility_Shoot</verbClass>
+
+            <defaultProjectile>AmP_AdvArm_Projectile_PulseCharge</defaultProjectile>
 
             <range>22.9</range>
             <minRange>3.9</minRange>
             <requireLineOfSight>true</requireLineOfSight>
+            
+            <burstShotCount>1</burstShotCount>
+
+            <accuracyTouch>0.64</accuracyTouch>
+            <accuracyShort>0.72</accuracyShort>
+            <accuracyMedium>0.63</accuracyMedium>
+            <accuracyLong>0.42</accuracyLong>
 
             <warmupTime>1.25</warmupTime>
             <soundCast>AmP_AdvArm_Shot_PulseCharge</soundCast>
+            
             <targetParams>
                 <canTargetLocations>true</canTargetLocations>
             </targetParams>
+
+            <muzzleFlashScale>16</muzzleFlashScale>
         </verbProperties>
-        <comps>
-            <li Class="CompProperties_AbilityLaunchProjectile">
-                <projectileDef>AmP_AdvArm_Projectile_PulseCharge</projectileDef>
-            </li>
-        </comps>
     </AbilityDef>
+
 </Defs>
